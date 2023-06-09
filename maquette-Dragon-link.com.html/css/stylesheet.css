@@ -1,0 +1,267 @@
+
+
+header {
+    margin: 0 auto;
+    background: #04FF0E;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+
+main {
+    background-color: #31B8A8;
+    display: flex;
+    width: 100%;
+
+}
+.body-container{
+    display: flex;
+}
+
+.navbar {
+    background-color: #1289F8;
+    width: 25%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.form-container{
+    display: contents;
+}
+.nav-item {
+    margin-bottom: 10px;
+}
+
+form {
+    padding: 1em;
+
+    border-radius: 10%;
+    border : 1px solid black
+}
+
+
+
+.don-button {
+    padding: 0.2em 1em;
+    margin-top: 1em;
+}
+.don-button a{
+    color: #030303;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+}
+
+.don-button:hover {
+    
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+}
+
+.main-div {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.card-image {
+    
+    border: 3px solid black;
+  border-radius: 50%;
+  max-width: 200px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+
+.card {
+    border: 3px solid black;
+    display: flex;
+    margin-top: 1em;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.card-type {
+    
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-size: contain;
+}
+
+.card-type:before {
+background-image: url(../img/etoile-noir.svg);
+}
+.card-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+}
+.dark{
+    color: #f8f6f6;
+}
+.white{
+    color:white;
+
+}
+.anger{
+    color:#ff0000
+}
+.card-button{
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.card-button:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  }
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: top left;
+  }
+  50% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+.relation{
+    color: white    ;
+}
+.type-dark {
+    background: linear-gradient(45deg, #4a148c, #000000);
+    background-size: 200% 200%;
+  background-position: top left;
+  animation: gradientAnimation 5s linear infinite;
+  }
+.title-dark{
+    background: linear-gradient(to bottom, #fcfdfd 0%, #4d5554 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:white;
+    -webkit-text-stroke: 1px black;
+}
+  
+  .type-white {
+    background: linear-gradient(45deg, #6200ee, #03dac6);
+    background-size: 200% 200%;
+  
+  animation: gradientAnimation 5s linear infinite;
+  }
+  .title-blue{
+    background: linear-gradient(to bottom, #1289F8 0%, #31B8A8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+.type-anger {
+    background: linear-gradient(45deg, #b00020 0%, #e79fae 100%);
+  background-size: 200% 200%;
+  background-position: top left;
+  animation: gradientAnimation 5s linear infinite;
+}
+
+
+/*************form******************/
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 740px) {
+    .card-content{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .body-container{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .notbad{
+        max-width: 200px;
+    }
+    .don-button{
+        max-height: 2em;
+    }
+    .form-general{
+        display: flex;
+    }
+   
+}
